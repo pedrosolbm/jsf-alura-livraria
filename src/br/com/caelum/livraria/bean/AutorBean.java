@@ -46,7 +46,7 @@ public class AutorBean {
 	public void remover(Autor autor) {
 		System.out.println("Removendo o autor " + autor.getNome());
 		System.out.println(autor.getLivros().isEmpty());
-		
+		System.out.println();
 		if (autor.getLivros().isEmpty()) {
 			new DAO<Autor>(Autor.class).remove(autor);
 			System.out.println("Autor " + autor.getNome() + " removido");
